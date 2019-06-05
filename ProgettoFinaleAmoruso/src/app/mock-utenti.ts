@@ -1,18 +1,18 @@
 import { Utente } from './user';
 export const DefUtenti = [
        {
-        username : "Gabriel",
-        password : "xxx123",
-        email  : "gabri@email.it",
-        nome : "Gabriel",
-        cognome : "Molodduwa"
+        username : "anacotti01",
+        password : "vivalacalifornia",
+        email  : "ana.cali@gmail.com",
+        nome : "Anastasia",
+        cognome : "Cotella"
     },
     {
-        username : "Admin",
-        password : "Admin",
-        email  : "admin@admin.it",
-        nome : "Amministratore",
-        cognome : "del sistema"
+        username : "LilTricky",
+        password : "analover",
+        email  : "trcky.lover@gmail.com",
+        nome : "Riccardo",
+        cognome : "Amoruso"
     },
 
 ]

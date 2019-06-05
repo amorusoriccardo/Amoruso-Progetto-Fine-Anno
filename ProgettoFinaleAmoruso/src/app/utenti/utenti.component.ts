@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Utente } from '../user';
 @Component({
-  selector: 'app-visua-utenti',
-  templateUrl: './visua-utenti.component.html',
-  styleUrls: ['./visua-utenti.component.css']
+  selector: 'app-utenti',
+  templateUrl: './utenti.component.html',
+  styleUrls: ['./utenti.component.css']
 })
-export class VisuaUtentiComponent implements OnInit {
+export class UtentiComponent implements OnInit {
   @Input() utenti : Utente[];
   constructor() { }
 
