@@ -1,0 +1,27 @@
+<nav class = "titolo" >
+    <a ><i> NOLEGGIO AUTO </i></a>
+  </nav>
+<div class= "jumbotron">
+<div class="col-sm-12">
+
+    <button class="btn btn-info logButton" *ngIf="!loggedUser" (click)="triggerReg()">Registrati</button>
+     <button class="btn btn-info logButton" *ngIf="!loggedUser" (click)="triggerLogin()">Login</button>
+    <label *ngIf="loggedUser">Benvenuto : {{loggedUser.username}}</label>
+    <button class="btn btn-danger float-right" *ngIf="loggedUser" (click)="logout()">Logout</button>
+</div>
+<div class="row">
+
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+        <app-registrazione class="col-sm-12" [utenti]="utenti" *ngIf="showReg"></app-registrazione>
+        <app-login class="col-sm-12" *ngIf="showLogin && !loggedUser" (userLogin)="setUtenteLoggato($event)" [loggedUser]="loggedUser" [utenti]="utenti"></app-login>
+    </div>
+
+    <div class="col-sm-2"></div>
+    <app-visua-utenti class="col-sm-4" [utenti]="utenti"></app-visua-utenti>
+
+</div>
+<div class="col-dt-12">
+    <app-bacheca [loggedUser]="loggedUser"></app-bacheca>
+</div>
+</div>

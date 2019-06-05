@@ -1,0 +1,17 @@
+<div class="form-group">
+  <form [formGroup]="formLog" (ngSubmit)="login()" class = "box ">
+
+<br><h3>Accedi</h3>
+
+    <input type="email" placeholder="Email" [formControl]="formLog.controls['email']" >
+     <div *ngIf="!formLog.controls['email'].valid && (formLog.controls['email'].dirty || formLog.controls['email'].touched)"
+    class="sbagliato" >Inserire Email
+
+    </div>   <input type="password" placeholder="Password" [formControl]="formLog.controls['password']" >
+     <div *ngIf="!formLog.controls['password'].valid && (formLog.controls['password'].dirty || formLog.controls['password'].touched)"
+    class="sbagliato" >Inserire Password
+    </div>
+
+    <button type="submit">Login</button><br>
+  </form>
+</div>

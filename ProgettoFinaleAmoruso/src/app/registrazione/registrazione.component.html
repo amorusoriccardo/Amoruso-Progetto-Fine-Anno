@@ -1,0 +1,40 @@
+<div class= "form-group">
+
+  <form [formGroup]="reg" (ngSubmit)="addUser()" class = "box " >
+      <br>
+    <h3>Registrati </h3>
+<br>
+    <input type="text" placeholder="nome" [formControl]="reg.controls['nome']" >
+    <div *ngIf="!reg.controls['nome'].valid && (reg.controls['nome'].dirty || reg.controls['nome'].touched)"
+    class="sbagliato" >Inserire Nome
+    </div>
+
+    <input type="text" placeholder="Cognome" [formControl]="reg.controls['cognome']" >
+     <div *ngIf="!reg.controls['cognome'].valid && (reg.controls['cognome'].dirty || reg.controls['cognome'].touched)"
+    class="sbagliato" >Inserire Cognome
+    </div>
+
+  <input type="text" placeholder="Username" [formControl]="reg.controls['username']" >
+ <div *ngIf="!reg.controls['username'].valid && (reg.controls['username'].dirty || reg.controls['username'].touched)"
+    class="sbagliato" >Inserire Username
+    </div>
+    <div class="sbagliato" *ngIf="usrTrovato" >
+      Username già usato
+    </div>
+
+    <input type="password" placeholder="Password" [formControl]="reg.controls['password']" >
+     <div *ngIf="!reg.controls['password'].valid && (reg.controls['password'].dirty || reg.controls['password'].touched)"
+    class="sbagliato" >Inserire Password
+    </div>
+
+    <input type="email" placeholder="Email" [formControl]="reg.controls['email']" >
+     <div *ngIf="!reg.controls['email'].valid && (reg.controls['email'].dirty || reg.controls['email'].touched)"
+    class="sbagliato" >Inserire Email
+    </div>
+
+    <div class="sbagliato" *ngIf="mailTrovato" role="alert">
+      Email già usata
+    </div>
+    <button type="submit"  >Registrati</button><br>
+  </form>
+</div>
