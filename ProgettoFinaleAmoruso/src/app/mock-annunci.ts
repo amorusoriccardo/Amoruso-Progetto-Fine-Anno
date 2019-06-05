@@ -2,16 +2,16 @@ import {Annuncio} from './annuncio';
 export const DefAnnunci =
 [
     {
-        username: "Admin",
-        data: "31/05/2019",
-        titolo: "Honor 10",
-        descrizione: "Telefono",
+        username: "persona con un telefono",
+        data: "22/03/2020",
+        titolo: "un bel telefono",
+        descrizione: "Telefonino",
         risposte:
         [
             {
-                username: "Tom",
-                testo: "Lo voglio io",
-                data: "02/06/2019"
+                username: "persona interessata",
+                testo: "ue uaglio quanto è bello sto telefono",
+                data: "22/04/2020"
             }
         ]
     }

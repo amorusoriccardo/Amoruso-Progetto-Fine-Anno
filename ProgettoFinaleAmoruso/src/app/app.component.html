@@ -1,11 +1,10 @@
 <nav class = "titolo" >
-    <a ><i> NOLEGGIO AUTO </i></a>
   </nav>
 <div class= "jumbotron">
 <div class="col-sm-12">
 
-    <button class="btn btn-info logButton" *ngIf="!loggedUser" (click)="triggerReg()">Registrati</button>
-     <button class="btn btn-info logButton" *ngIf="!loggedUser" (click)="triggerLogin()">Login</button>
+    <button class="btn btn-info logButton" *ngIf="!loggedUser" (click)="triggerReg()" style="background-color: black">Registrati</button>
+     <button class="btn btn-info logButton" *ngIf="!loggedUser" (click)="triggerLogin()"style="background-color: black">Login</button>
     <label *ngIf="loggedUser">Benvenuto : {{loggedUser.username}}</label>
     <button class="btn btn-danger float-right" *ngIf="loggedUser" (click)="logout()">Logout</button>
 </div>

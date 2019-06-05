@@ -1,0 +1,27 @@
+.logButton
+{
+    width: 120px;
+    margin: 10px 10px 0px 20px;
+}
+.bacheca
+{
+    padding:100px;
+}
+
+.jumbotron{
+  padding: 2rem;
+background-color: black;
+}
+.titolo{
+text-align: center;
+
+background: orangered;
+
+font-family: Arial;
+  padding: 25px;
+
+}
+
+.titolo i{
+    color:yellowgreen;
+}

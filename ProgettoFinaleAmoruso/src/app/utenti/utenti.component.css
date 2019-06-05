@@ -1,0 +1,12 @@
+.box{
+  background: orangered;
+  border-radius: 10px;
+}
+.box h5 {
+    text-align: center;
+     color :yellow;
+}
+.box ul  {
+
+    color :yellow;
+}
